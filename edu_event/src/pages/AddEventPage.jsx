@@ -11,7 +11,6 @@ const AddEventPage = () => {
 
   return (
     <div>
-      <h2>Add New Event</h2>
       <AddEventForm />
     </div>
   );
