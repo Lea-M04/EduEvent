@@ -9,6 +9,7 @@ import Navbar from './components/Navbar';
 import NetworkingPage from './pages/NetworkingPage';
 import ProfilePage from './pages/ProfilePage';
 import PrivateRoute from './components/PrivateRoute';
+import ChatBot from './components/ChatBot';
 
 
 function App() {
@@ -38,7 +39,7 @@ function App() {
     </PrivateRoute>
   } />
 </Routes>
-
+ <ChatBot />
       </Router>
     </AuthProvider>
   );
