@@ -11316,23 +11316,23 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .gradient-custom {
-  background-color: #212529; /* e njëjta ngjyrë si karta */
+  background-color: #212529; 
   min-height: 100vh;
 }
 
-/* Hint text modern (placeholder, links, mesazhe) */
+
 ::placeholder {
-  color: rgba(255, 145, 77, 0.7); /* portokalli e zbehtë */
+  color: rgba(255, 145, 77, 0.7); 
 }
 
 .form-label,
 .text-muted,
 .text-white-50,
 a {
-  color: rgba(255, 105, 180, 0.7); /* rozë e lehtë */
+  color: rgba(255, 105, 180, 0.7); 
 }
 
 a:hover {
-  color: #ff69b4; /* më e gjallë në hover */
+  color: #ff69b4; 
   text-decoration: underline;
 }
