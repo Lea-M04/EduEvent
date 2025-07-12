@@ -37,7 +37,9 @@ const RegisterForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <>
+    
+    <br></br><br /><br /><br /><br /><br />    <form onSubmit={handleSubmit}>
       <div>
         <label>Username:</label>
         <input name="username" value={formData.username} onChange={handleChange} required />
@@ -70,6 +72,7 @@ const RegisterForm = () => {
 
       <button type="submit">Regjistrohu</button>
     </form>
+    </>
   );
 };
 
