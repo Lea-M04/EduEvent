@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import LoginForm from './LoginForm'; // për ngjyrat hint dhe .gradient-custom
 
 const RegisterForm = () => {
   const [formData, setFormData] = useState({
@@ -37,41 +38,100 @@ const RegisterForm = () => {
   };
 
   return (
-    <>
-    
-    <br></br><br /><br /><br /><br /><br />    <form onSubmit={handleSubmit}>
-      <div>
-        <label>Username:</label>
-        <input name="username" value={formData.username} onChange={handleChange} required />
-      </div>
+    <><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+    <section className="vh-100 gradient-custom d-flex align-items-center justify-content-center">
+      <div className="container py-5">
+        <div className="row justify-content-center">
+          <div className="col-12 col-md-8 col-lg-6 col-xl-6">
+            <div className="card bg-dark text-white shadow" style={{ borderRadius: '1rem', borderColor: '#ff70e7' }}>
+              <div className="card-body p-5">
+                <form onSubmit={handleSubmit}>
+                  <div className="mb-5 text-center">
+                    <h2 className="fw-bold mb-2 text-uppercase">Register</h2>
+                    <p className="text-white-50">Create your account to get started</p>
+                  </div>
 
-      <div>
-        <label>Password:</label>
-        <input type="password" name="password" value={formData.password} onChange={handleChange} required />
-      </div>
+                  <div className="form-outline form-white mb-3">
+                    <label className="form-label" style={{color:'white'}}>Username</label>
+                    <input
+                      className="form-control form-control-lg"
+                      name="username"
+                      value={formData.username}
+                      onChange={handleChange}
+                      required
+                    />
+                  </div>
 
-      <div>
-        <label>First Name:</label>
-        <input name="first_name" value={formData.first_name} onChange={handleChange} required />
-      </div>
+                  <div className="form-outline form-white mb-3">
+                    <label className="form-label" style={{color:'white'}}>Password</label>
+                    <input
+                      type="password"
+                      className="form-control form-control-lg"
+                      name="password"
+                      value={formData.password}
+                      onChange={handleChange}
+                      required
+                    />
+                  </div>
 
-      <div>
-        <label>Last Name:</label>
-        <input name="last_name" value={formData.last_name} onChange={handleChange} required />
-      </div>
+                  <div className="form-outline form-white mb-3">
+                    <label className="form-label" style={{color:'white'}}>First Name</label>
+                    <input
+                      className="form-control form-control-lg"
+                      name="first_name"
+                      value={formData.first_name}
+                      onChange={handleChange}
+                      required
+                    />
+                  </div>
 
-      <div>
-        <label>Field (e.g., Computer Science):</label>
-        <input name="field" value={formData.field} onChange={handleChange} required />
-      </div>
+                  <div className="form-outline form-white mb-3">
+                    <label className="form-label" style={{color:'white'}}>Last Name</label>
+                    <input
+                      className="form-control form-control-lg"
+                      name="last_name"
+                      value={formData.last_name}
+                      onChange={handleChange}
+                      required
+                    />
+                  </div>
 
-      <div>
-        <label>Interests (ndaji me presje):</label>
-        <input name="interests" value={formData.interests} onChange={handleChange} placeholder="p.sh. AI, Web, Hackathons" />
-      </div>
+                  <div className="form-outline form-white mb-3">
+                    <label className="form-label" style={{color:'white'}}>Field (e.g., Computer Science)</label>
+                    <input
+                      className="form-control form-control-lg"
+                      name="field"
+                      value={formData.field}
+                      onChange={handleChange}
+                      required
+                    />
+                  </div>
 
-      <button type="submit">Regjistrohu</button>
-    </form>
+                  <div className="form-outline form-white mb-4">
+                    <label className="form-label" style={{color:'white'}}>Interests (ndaji me presje)</label>
+                    <input
+                      className="form-control form-control-lg"
+                      name="interests"
+                      value={formData.interests}
+                      onChange={handleChange}
+                      placeholder="p.sh. AI, Web, Hackathons"
+                    />
+                  </div>
+
+                  <div className="d-grid">
+                    <button type="submit" className="btn btn-outline-light btn-lg">Register</button>
+                  </div>
+
+                  <p className="mt-4 mb-0 text-center text-white-50">
+                    Already have an account? <a href="/login" className="fw-bold text-white-50">Login</a>
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     </>
   );
 };
