@@ -13,6 +13,7 @@ import ChatBot from './components/ChatBot';
 import AddEventPage from './pages/AddEventPage';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
+import Footer from './components/Footer';
 
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
 } />
 </Routes>
  <ChatBot />
+  <Footer />
       </Router>
     </AuthProvider>
   );
