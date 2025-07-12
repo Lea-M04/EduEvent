@@ -11,6 +11,8 @@ import ProfilePage from './pages/ProfilePage';
 import PrivateRoute from './components/PrivateRoute';
 import ChatBot from './components/ChatBot';
 import AddEventPage from './pages/AddEventPage';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 import Footer from './components/Footer';
 
 
@@ -18,13 +20,13 @@ function App() {
   return (
     <AuthProvider>
       <Router>
-        <Navbar /> {/* ✅ Tash është brenda <Router> */}
+        <Navbar /> 
        <Routes>
   <Route path="/" element={<HomePage />} />
   <Route path="/login" element={<LoginPage />} />
   <Route path="/register" element={<RegisterPage />} />
 
-  {/* 🔐 Mbrohet: duhet me qenë i kyçur për me i pa këto */}
+ 
   <Route path="/events" element={
     <PrivateRoute>
       <EventPage />
