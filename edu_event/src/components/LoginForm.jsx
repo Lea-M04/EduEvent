@@ -23,11 +23,11 @@ function LoginForm() {
   return (
     <>
     <br /><br /><br /><br />
-      <section className="vh-100 gradient-custom d-flex align-items-center justify-content-center">
+      <section className="vh-100 gradient-custom d-flex align-items-center justify-content-center" style={{backgroundColor: 'white' }}>
         <div className="container py-5">
           <div className="row justify-content-center">
             <div className="col-12 col-md-8 col-lg-6 col-xl-5">
-              <div className="card bg-dark text-white shadow" style={{ borderRadius: '1rem', borderColor: '#ff70e7' }}>
+              <div className="card bg-dark text-white shadow" style={{ borderRadius: '1rem', borderColor: 'white' }}>
                 <div className="card-body p-5">
                   <form onSubmit={handleSubmit}>
                     <div className="mb-5 text-center">

@@ -1,7 +1,54 @@
-import React from 'react';
+
 import '../assets/css/styles.css';
 
-function EventCard({ event }) {
+import React, { useState, useEffect } from 'react';
+import { useAuth } from '../context/authContext';
+import axios from 'axios';
+
+function EventCard({ event, users = [], applied = [] }) {
+  const { user } = useAuth();
+
+  const [hasApplied, setHasApplied] = useState(false);
+
+  useEffect(() => {
+    if (!user) {
+      setHasApplied(false);
+      return;
+    }
+    const appliedAlready = applied.some(a => a.userId === user.id && a.eventId === event.id);
+    setHasApplied(appliedAlready);
+  }, [applied, user, event.id]);
+
+  const eventApplicants = applied
+    .filter(a => a.eventId === event.id)
+    .map(a => users.find(u => u.id === a.userId))
+    .filter(Boolean);
+
+  const handleApply = async () => {
+    try {
+      await axios.post('http://localhost:5000/api/applied', {
+        userId: user.id,
+        eventId: event.id,
+      });
+      alert('Applied successfully');
+      setHasApplied(true);
+    } catch (err) {
+      alert(err.response?.data?.message || 'Apply failed');
+    }
+  };
+
+  const handleConnect = async (otherUser) => {
+    try {
+      await axios.post('http://localhost:5000/api/connections', {
+        fromUserId: user.id,
+        toUserId: otherUser.id,
+      });
+      alert(`Connected with ${otherUser.username}`);
+    } catch (err) {
+      alert(err.response?.data?.message || 'Already connected or failed');
+    }
+  };
+
   return (
     <div className="event-card-custom h-100 d-flex flex-column justify-content-between">
       <div>
@@ -28,3 +75,4 @@ function EventCard({ event }) {
 }
 
 export default EventCard;
+  

@@ -11323,6 +11323,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 ::placeholder {
   color: rgba(255, 145, 77, 0.7); 
+  color: rgba(255, 145, 77, 0.7); 
 }
 
 .form-label,
@@ -11330,9 +11331,11 @@ section#contact form#contactForm :-ms-input-placeholder {
 .text-white-50,
 a {
   color: rgba(255, 105, 180, 0.7); 
+  color: rgba(255, 105, 180, 0.7); 
 }
 
 a:hover {
+  color: #ff69b4; 
   color: #ff69b4; 
   text-decoration: underline;
 }
@@ -11581,3 +11584,4 @@ a:hover {
 .filter-button:hover {
   background-color: #ff6290;
 }
+

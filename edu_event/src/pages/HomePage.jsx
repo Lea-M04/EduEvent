@@ -168,21 +168,21 @@ const HomePage = () => {
             <div className="col-lg-4">
               <div className="team-member">
                 <img className="mx-auto rounded-circle" src="/assets/img/team/1.jpg" alt="..." />
-                <h4>Era Veliu</h4>
+                <h4>Gazmend Zeqiri</h4>
                 <p className="text-muted">CEO & Founder</p>
               </div>
             </div>
             <div className="col-lg-4">
               <div className="team-member">
                 <img className="mx-auto rounded-circle" src="/assets/img/team/2.jpg" alt="..." />
-                <h4>Arben Dauti</h4>
+                <h4>Arbenita Dauti</h4>
                 <p className="text-muted">Community Lead</p>
               </div>
             </div>
             <div className="col-lg-4">
               <div className="team-member">
                 <img className="mx-auto rounded-circle" src="/assets/img/team/3.jpg" alt="..." />
-                <h4>Elira Kastrati</h4>
+                <h4>Elir Kastrati</h4>
                 <p className="text-muted">Full Stack Developer</p>
               </div>
             </div>

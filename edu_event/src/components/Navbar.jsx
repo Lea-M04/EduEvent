@@ -39,7 +39,7 @@ function Navbar() {
                   </span>
                 </li>
                 <li className="nav-item">
-                  <span className="nav-link disabled">Hi, {user.username} 👋</span>
+                  <span className="nav-link disabled">Hi, {user.username}</span>
                 </li>
               </>
             )}
@@ -49,7 +49,6 @@ function Navbar() {
                 <li className="nav-item"><Link className="nav-link" to="/register">Register</Link></li>
               </>
             )}
-            <li className="nav-item"><DarkModeToggle /></li>
           </ul>
         </div>
 
