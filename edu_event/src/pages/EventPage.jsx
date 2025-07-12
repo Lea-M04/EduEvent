@@ -38,6 +38,7 @@ function EventPage() {
 
   return (
     <div className="container">
+      <br /><br /><br /><br /><br /><br /><br />
       <h2>Events</h2>
       {user && <FilterBar onFilter={handleFilter} />}
       
