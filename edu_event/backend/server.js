@@ -1,6 +1,8 @@
 const express = require('express');
 const cors = require('cors');
 const logger = require('./middleware/logger');
+const appliedRoutes = require('./routes/appliedRoute'); 
+const connectionsRoutes = require('./routes/connectionsRoute');
 
 const authRoutes = require('./routes/authRoute');
 const eventRoutes = require('./routes/eventRoute');
@@ -16,6 +18,8 @@ app.use(logger);
 app.use('/api/auth', authRoutes);
 app.use('/api/events', eventRoutes);
 app.use('/api/users', userRoutes);
+app.use('/api/connections', connectionsRoutes);
+app.use('/api/applied', appliedRoutes); 
 
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
