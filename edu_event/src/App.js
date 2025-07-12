@@ -10,6 +10,7 @@ import NetworkingPage from './pages/NetworkingPage';
 import ProfilePage from './pages/ProfilePage';
 import PrivateRoute from './components/PrivateRoute';
 import ChatBot from './components/ChatBot';
+import AddEventPage from './pages/AddEventPage';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
@@ -40,6 +41,11 @@ function App() {
       <ProfilePage />
     </PrivateRoute>
   } />
+  <Route path="/add-event" element={
+  <PrivateRoute>
+    <AddEventPage />
+  </PrivateRoute>
+} />
 </Routes>
  <ChatBot />
       </Router>

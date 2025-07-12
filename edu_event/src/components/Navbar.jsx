@@ -26,7 +26,10 @@ function Navbar() {
           <ul className="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
             <li className="nav-item"><Link className="nav-link" to="/">Home</Link></li>
             <li className="nav-item"><Link className="nav-link" to="/events">Events</Link></li>
-            {user && (
+             {user?.username === 'admin' && (
+  <li className="nav-item"><Link className="nav-link" to="/add-event">Add Event</Link></li>
+)}
+        {user && (
               <>
                 <li className="nav-item"><Link className="nav-link" to="/networking">Networking</Link></li>
                 <li className="nav-item"><Link className="nav-link" to="/profile">Profile</Link></li>
@@ -49,6 +52,7 @@ function Navbar() {
             <li className="nav-item"><DarkModeToggle /></li>
           </ul>
         </div>
+
       </div>
     </nav>
   );

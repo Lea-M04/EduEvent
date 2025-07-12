@@ -7,7 +7,11 @@
     "city": "Prishtina",
     "location": "Innovation Center Kosovo",
     "field": "Computer Science",
-    "tags": ["Hackathons", "AI", "Web"]
+    "tags": [
+      "Hackathons",
+      "AI",
+      "Web"
+    ]
   },
   {
     "id": 2,
@@ -17,7 +21,10 @@
     "city": "Peja",
     "location": "Tech Hub Peja",
     "field": "Marketing",
-    "tags": ["Design", "Business"]
+    "tags": [
+      "Design",
+      "Business"
+    ]
   },
   {
     "id": 3,
@@ -37,17 +44,22 @@
     "city": "Drenas",
     "location": "Termokiss",
     "field": "Art & Design",
-    "tags": ["Design", "Creativity"]
+    "tags": [
+      "Design",
+      "Creativity"
+    ]
   },
-   {
-    "id": 3,
-    "title": "UI/UX Design Night",
-    "description": "Evening meetup for designers.",
-    "date": "2025-07-20",
-    "city": "Podujeve",
-    "location": "Termokiss",
-    "field": "Art & Design",
-    "tags": ["Design", "Creativity"]
+  {
+    "title": "test",
+    "description": "test",
+    "date": "2025-07-07",
+    "city": "test",
+    "location": "test",
+    "field": "test",
+    "tags": [
+      "test"
+    ],
+    "id": 4
   }
   
 ]
