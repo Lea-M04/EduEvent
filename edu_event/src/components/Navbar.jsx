@@ -12,12 +12,16 @@ function Navbar() {
       <ul className="nav-links">
         <li><Link to="/">Home</Link></li>
         <li><Link to="/events">Events</Link></li>
+         {user?.username === 'admin' && (
+  <li><Link to="/add-event">Shto Event</Link></li>
+)}
         {user && <li><Link to="/networking">Networking</Link></li>}
         {!user && <li><Link to="/login">Login</Link></li>}
         {!user && <li><Link to="/register">Register</Link></li>}
         {user && <li onClick={logout} style={{ cursor: 'pointer' }}>Logout</li>}
         {user && <span style={{ marginLeft: '1rem' }}>Hi, {user.username} 👋</span>}
       </ul>
+
 
       <DarkModeToggle />
     </nav>
