@@ -27,7 +27,7 @@ function Navbar() {
             <li className="nav-item"><Link className="nav-link" to="/">Home</Link></li>
             <li className="nav-item"><Link className="nav-link" to="/events">Events</Link></li>
              {user?.username === 'admin' && (
-  <li><Link to="/add-event">Shto Event</Link></li>
+  <li className="nav-item"><Link className="nav-link" to="/add-event">Add Event</Link></li>
 )}
         {user && (
               <>
