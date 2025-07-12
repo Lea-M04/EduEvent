@@ -1,27 +1,26 @@
-import { useState } from 'react';
-
+import React, { useState } from 'react';
+import '../assets/css/styles.css';
 function FilterBar({ onFilter }) {
-  const [customInterests, setCustomInterests] = useState('');
+  const [input, setInput] = useState('');
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const interestsArray = customInterests
-      .split(',')
-      .map(i => i.trim())
-      .filter(i => i.length > 0);
-    onFilter(interestsArray);
+  const handleFilter = () => {
+    const interests = input.split(',').map(tag => tag.trim());
+    onFilter(interests);
   };
 
   return (
-    <form onSubmit={handleSubmit} className="filter-bar">
+    <div className="filterbar-container">
       <input
         type="text"
-        placeholder="Filter by interests (comma separated)"
-        value={customInterests}
-        onChange={(e) => setCustomInterests(e.target.value)}
+        placeholder="Type interests (e.g. AI, Design)..."
+        value={input}
+        onChange={(e) => setInput(e.target.value)}
+        className="filter-input"
       />
-      <button type="submit">Filter</button>
-    </form>
+      <button onClick={handleFilter} className="filter-button">
+        Filter
+      </button>
+    </div>
   );
 }
 

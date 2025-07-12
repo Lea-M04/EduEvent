@@ -2,19 +2,20 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import EventCard from '../components/EventCard';
 import FilterBar from '../components/FilterBar';
+import EventMap from '../components/EventMap';
 import { useAuth } from '../context/authContext';
-import EventMap from '../components/EventMap'; 
+import '../assets/css/styles.css';
 
 function EventPage() {
   const [events, setEvents] = useState([]);
-  const [applied, setApplied] = useState([]);        
-  const [users, setUsers] = useState([]);          
+  const [applied, setApplied] = useState([]);
+  const [users, setUsers] = useState([]);
   const { user } = useAuth();
 
   useEffect(() => {
     fetchAllEvents();
-    fetchApplied();                               
-    fetchUsers();                                    
+    fetchApplied();
+    fetchUsers();
   }, []);
 
   const fetchAllEvents = async () => {
@@ -28,7 +29,7 @@ function EventPage() {
 
   const fetchApplied = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/applied'); 
+      const res = await axios.get('http://localhost:5000/api/applied');
       setApplied(res.data);
     } catch (err) {
       console.error("Error fetching applied users", err);
@@ -37,7 +38,7 @@ function EventPage() {
 
   const fetchUsers = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/users');   
+      const res = await axios.get('http://localhost:5000/api/users');
       setUsers(res.data);
     } catch (err) {
       console.error("Error fetching users", err);
@@ -59,33 +60,43 @@ function EventPage() {
   };
 
   return (
-    <div className="container">
-      <br /><br /><br /><br /><br /><br /><br />
-      <h2>Events</h2>
-      {user && <FilterBar onFilter={handleFilter} />}
-      
-      <div className="event-list">
+    <section className="page-section bg-light" id="events">
+      <div className="container">
+        <div className="text-center">
+          <h2 className="section-heading text-uppercase">Events</h2>
+          <h3 className="section-subheading text-muted">Discover opportunities tailored for you</h3>
+        </div>
+
+        {user && (
+          <div className="text-center mb-4">
+            <FilterBar onFilter={handleFilter} />
+          </div>
+        )}
+
         {events.length === 0 ? (
-          <p>No events found.</p>
+          <p className="text-muted text-center">No events found.</p>
         ) : (
-          events.map(event => (
-            <EventCard 
-              key={event.id} 
-              event={event} 
-              users={users}       
-              applied={applied}  
-            />
-          ))
+          <div className="row">
+            {events.map(event => (
+              <div className="col-lg-4 col-md-6 col-sm-12 mb-5 d-flex" key={event.id}>
+                <EventCard event={event} users={users} applied={applied} />
+              </div>
+            ))}
+          </div>
+        )}
+
+        {events.length > 0 && (
+          <section className="page-section" id="event-map">
+            <div className="container">
+              <div className="text-center mb-4">
+                <h3 className="section-heading text-uppercase">Event Map</h3>
+              </div>
+              <EventMap events={events} />
+            </div>
+          </section>
         )}
       </div>
-
-      {events.length > 0 && (
-        <div style={{ marginTop: '2rem' }}>
-          <h3> Event map</h3>
-          <EventMap events={events} />
-        </div>
-      )}
-    </div>
+    </section>
   );
 }
 

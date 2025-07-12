@@ -130,7 +130,7 @@ const RegisterForm = () => {
           </div>
         </div>
       </div>
-    </section>
+    </section><br></br><br></br><br></br><br></br><br></br>
     </>
   );
 };

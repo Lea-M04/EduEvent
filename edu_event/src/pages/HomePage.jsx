@@ -157,7 +157,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Team Section */}
+
       <section className="page-section bg-light" id="team">
         <div className="container">
           <div className="text-center">
@@ -190,7 +190,6 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
       <section className="page-section" id="contact">
         <div className="container">
           <div className="text-center">

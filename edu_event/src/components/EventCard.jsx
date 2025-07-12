@@ -50,42 +50,25 @@ function EventCard({ event, users = [], applied = [] }) {
   };
 
   return (
-    <div className="card mb-4 shadow-sm border-0">
-      <div className="card-body" style={{border: '1px solid #ccc', padding: '1rem', marginBottom: '1rem'}}>
-        <h5 className="card-title text-primary">{event.title}</h5>
-        <p className="card-text">{event.description}</p>
-        <p className="card-text"><strong>Field:</strong> {event.field}</p>
-        <p className="card-text"><strong>Tags:</strong> {event.tags.join(', ')}</p>
-        <p className="card-text"><strong>Date:</strong> {event.date}</p>
-        <p className="card-text"><strong>Location:</strong> {event.location}</p>
+    <div className="event-card-custom h-100 d-flex flex-column justify-content-between">
+      <div>
+        <div className="event-card-header text-white text-center">
+          <h5 className="mb-0">{event.title}</h5>
+        </div>
+        <div className="card-body px-3 py-4 text-center">
+          <p className="card-text text-muted">{event.description}</p>
 
-      {!hasApplied && user && (
-        <button onClick={handleApply} style={{ marginTop: '0.5rem' }}>
-          Apply to this event
-        </button>
-      )}
-
-      {hasApplied && (
-        <p style={{ marginTop: '0.5rem', color: 'green' }}>You have applied to this event</p>
-      )}
-
-      {eventApplicants.length > 0 && (
-        <div style={{ marginTop: '1rem' }}>
-          <strong>Applied Users:</strong>
-          <ul>
-            {eventApplicants.map(u => (
-              <li key={u.id}>
-                {u.first_name} {u.last_name || ''}{' '}
-                {user?.id !== u.id && (
-                  <button onClick={() => handleConnect(u)} style={{ marginLeft: '0.5rem' }}>
-                    Connect
-                  </button>
-                )}
-              </li>
-            ))}
+          <ul className="list-unstyled text-start mt-4 small">
+            <li><strong>📘 Field:</strong> {event.field}</li>
+            <li><strong>🏷️ Tags:</strong> {event.tags.join(', ')}</li>
+            <li><strong>📅 Date:</strong> {new Date(event.date).toLocaleDateString()}</li>
+            <li><strong>📍 Location:</strong> {event.city} – {event.location}</li>
           </ul>
         </div>
-      )}
+      </div>
+
+      <div className="text-center pb-3">
+        <button className="btn btn-sm btn-outline-primary rounded-pill px-4">More Info</button>
       </div>
     </div>
   );
