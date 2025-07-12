@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "username": "admin",
+    "password": "1234",
+    "first_name": "Admin",
+    "last_name": "User",
+    "field": "Computer Science",
+    "interests": [
+      "AI",
+      "Web",
+      "Hackathons"
+    ]
+  },
+  {
+    "id": 2,
+    "username": "student1",
+    "password": "pass123",
+    "first_name": "DEAL",
+    "last_name": "Company",
+    "field": "Marketing",
+    "interests": [
+      "Design",
+      "Business",
+      "Startups"
+    ]
+  },
+  {
+    "id": 3,
+    "username": "filanfisteku",
+    "password": "111",
+    "field": "Computer Science",
+    "interests": [
+      "la",
+      "la",
+      "la"
+    ]
+  }
+]
