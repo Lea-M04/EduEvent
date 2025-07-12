@@ -3,6 +3,7 @@ import axios from 'axios';
 import EventCard from '../components/EventCard';
 import FilterBar from '../components/FilterBar';
 import { useAuth } from '../context/authContext';
+import EventMap from '../components/EventMap'; 
 
 function EventPage() {
   const [events, setEvents] = useState([]);
@@ -39,6 +40,7 @@ function EventPage() {
     <div className="container">
       <h2>Events</h2>
       {user && <FilterBar onFilter={handleFilter} />}
+      
       <div className="event-list">
         {events.length === 0 ? (
           <p>No events found.</p>
@@ -46,6 +48,14 @@ function EventPage() {
           events.map(event => <EventCard key={event.id} event={event} />)
         )}
       </div>
+
+
+      {events.length > 0 && (
+        <div style={{ marginTop: '2rem' }}>
+          <h3> Event map</h3>
+          <EventMap events={events} />
+        </div>
+      )}
     </div>
   );
 }

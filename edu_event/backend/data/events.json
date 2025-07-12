@@ -24,9 +24,30 @@
     "title": "UI/UX Design Night",
     "description": "Evening meetup for designers.",
     "date": "2025-07-20",
-    "city": "Prishtina",
+    "city": "Gjakova",
+    "location": "Termokiss",
+    "field": "Art & Design",
+    "tags": ["Design", "Creativity"]
+  },
+   {
+    "id": 3,
+    "title": "UI/UX Design Night",
+    "description": "Evening meetup for designers.",
+    "date": "2025-07-20",
+    "city": "Drenas",
+    "location": "Termokiss",
+    "field": "Art & Design",
+    "tags": ["Design", "Creativity"]
+  },
+   {
+    "id": 3,
+    "title": "UI/UX Design Night",
+    "description": "Evening meetup for designers.",
+    "date": "2025-07-20",
+    "city": "Podujeve",
     "location": "Termokiss",
     "field": "Art & Design",
     "tags": ["Design", "Creativity"]
   }
+  
 ]
