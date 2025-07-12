@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useAuth } from '../context/authContext';
+import '../assets/css/styles.css';
 
 function ChatBot() {
   const { user } = useAuth();
@@ -8,7 +9,6 @@ function ChatBot() {
   const [input, setInput] = useState('');
 
   useEffect(() => {
-    // Gjatë fillimit, mesazhi i parë nga boti
     const firstMsg = {
       from: 'bot',
       text: user

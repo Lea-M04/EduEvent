@@ -7,11 +7,7 @@
     "city": "Prishtina",
     "location": "Innovation Center Kosovo",
     "field": "Computer Science",
-    "tags": [
-      "Hackathons",
-      "AI",
-      "Web"
-    ]
+    "tags": ["Hackathons", "AI", "Web"]
   },
   {
     "id": 2,
@@ -21,10 +17,7 @@
     "city": "Peja",
     "location": "Tech Hub Peja",
     "field": "Marketing",
-    "tags": [
-      "Design",
-      "Business"
-    ]
+    "tags": ["Design", "Business"]
   },
   {
     "id": 3,
@@ -32,34 +25,128 @@
     "description": "Evening meetup for designers.",
     "date": "2025-07-20",
     "city": "Gjakova",
-    "location": "Termokiss",
+    "location": "Urban Station Gjakova",
     "field": "Art & Design",
     "tags": ["Design", "Creativity"]
   },
-   {
-    "id": 3,
-    "title": "UI/UX Design Night",
-    "description": "Evening meetup for designers.",
-    "date": "2025-07-20",
-    "city": "Drenas",
-    "location": "Termokiss",
-    "field": "Art & Design",
-    "tags": [
-      "Design",
-      "Creativity"
-    ]
+  {
+    "id": 4,
+    "title": "EduTech Summit",
+    "description": "Exploring the future of education and technology.",
+    "date": "2025-08-05",
+    "city": "Prizren",
+    "location": "Innovation and Training Park",
+    "field": "Education Technology",
+    "tags": ["EdTech", "Workshops", "Innovation"]
   },
   {
-    "title": "test",
-    "description": "test",
-    "date": "2025-07-07",
-    "city": "test",
-    "location": "test",
-    "field": "test",
-    "tags": [
-      "test"
-    ],
-    "id": 4
+    "id": 5,
+    "title": "Startup Pitch Fest",
+    "description": "Pitch your idea in front of investors.",
+    "date": "2025-08-10",
+    "city": "Ferizaj",
+    "location": "Ferizaj Business Center",
+    "field": "Entrepreneurship",
+    "tags": ["Startup", "Investment", "Business"]
+  },
+  {
+    "id": 6,
+    "title": "Green Future Conference",
+    "description": "Talks and networking on sustainability.",
+    "date": "2025-09-01",
+    "city": "Mitrovica",
+    "location": "Cultural Center Mitrovica",
+    "field": "Environment",
+    "tags": ["Climate", "Innovation", "Policy"]
+  },
+  {
+    "id": 7,
+    "title": "Data Science Day",
+    "description": "Keynotes and demos in data and ML.",
+    "date": "2025-09-12",
+    "city": "Prishtina",
+    "location": "UBT Campus",
+    "field": "Data Science",
+    "tags": ["Python", "ML", "Analytics"]
+  },
+  {
+    "id": 8,
+    "title": "Game Dev Jam",
+    "description": "3-day indie game creation marathon.",
+    "date": "2025-09-25",
+    "city": "Gjilan",
+    "location": "Youth Innovation Center",
+    "field": "Game Development",
+    "tags": ["Unity", "Teamwork", "Fun"]
+  },
+  {
+    "id": 9,
+    "title": "Women in Tech Meetup",
+    "description": "Celebrating and connecting women in STEM.",
+    "date": "2025-10-10",
+    "city": "Prishtina",
+    "location": "Bonevet Prishtina",
+    "field": "Diversity & Inclusion",
+    "tags": ["Tech", "Leadership", "Community"]
+  },
+  {
+    "id": 10,
+    "title": "Blockchain Basics Workshop",
+    "description": "Hands-on intro to Ethereum and smart contracts.",
+    "date": "2025-10-15",
+    "city": "Peja",
+    "location": "Techspace Peja",
+    "field": "Blockchain",
+    "tags": ["Crypto", "Ethereum", "Smart Contracts"]
+  },
+  {
+    "id": 11,
+    "title": "AI for Everyone",
+    "description": "Seminar on applied AI across industries.",
+    "date": "2025-10-28",
+    "city": "Gjakova",
+    "location": "American Corner Gjakova",
+    "field": "Artificial Intelligence",
+    "tags": ["Machine Learning", "AI", "Tools"]
+  },
+  {
+    "id": 12,
+    "title": "Digital Nomads Kosovo",
+    "description": "Networking and tips for working remotely.",
+    "date": "2025-11-03",
+    "city": "Prizren",
+    "location": "Dokufest Hub",
+    "field": "Remote Work",
+    "tags": ["Freelancing", "Travel", "Tech"]
+  },
+  {
+    "id": 13,
+    "title": "Creative Coding Workshop",
+    "description": "Generative art using code.",
+    "date": "2025-11-15",
+    "city": "Kamenica",
+    "location": "Art House Kamenica",
+    "field": "Creative Tech",
+    "tags": ["p5.js", "Art", "JS"]
+  },
+  {
+    "id": 14,
+    "title": "Cybersecurity Awareness Day",
+    "description": "Stay safe online. Learn the basics.",
+    "date": "2025-11-22",
+    "city": "Vushtrri",
+    "location": "Municipal Hall",
+    "field": "Cybersecurity",
+    "tags": ["Security", "Ethical Hacking", "Phishing"]
+  },
+  {
+    "id": 15,
+    "title": "AR/VR Innovation Lab",
+    "description": "Showcase of AR/VR solutions and ideas.",
+    "date": "2025-12-05",
+    "city": "Deçan",
+    "location": "VR Center",
+    "field": "Augmented Reality",
+    "tags": ["AR", "VR", "Immersive Tech"]
   }
-  
 ]
