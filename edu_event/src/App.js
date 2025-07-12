@@ -11,6 +11,7 @@ import ProfilePage from './pages/ProfilePage';
 import PrivateRoute from './components/PrivateRoute';
 import ChatBot from './components/ChatBot';
 import AddEventPage from './pages/AddEventPage';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
 } />
 </Routes>
  <ChatBot />
+  <Footer />
       </Router>
     </AuthProvider>
   );

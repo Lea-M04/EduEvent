@@ -183,4 +183,26 @@ body.dark .chat-msg.bot {
   background-color: #444;
 }
 
+body.dark footer {
+  background-color: #121212 !important;
+}
+
+body.dark .table {
+  color: #ccc;
+}
+
+body.dark .form-control {
+  background-color: #333;
+  color: #fff;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+
 
