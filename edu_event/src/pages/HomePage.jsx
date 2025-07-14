@@ -20,7 +20,7 @@ const HomePage = () => {
     <p className="text-white fs-5">
       Explore internships, hackathons, training opportunities, and meet others who share your passion for growth and learning.
     </p>
-    <a className="btn btn-primary btn-xl text-uppercase mt-3" href="#services">
+    <a className="btn btn-primary btn-xl text-uppercase mt-3" href="#services" style={{backgroundColor: '#ff70e7', borderColor: '#ff70e7'}}>
       Explore Opportunities
     </a>
   </div>
@@ -36,7 +36,7 @@ const HomePage = () => {
     </div>
     <div className="row text-center">
       <div className="col-md-4">
-        <span className="fa-stack fa-4x">
+        <span className="fa-stack fa-4x" >
           <i className="fas fa-circle fa-stack-2x text-primary"></i>
           <i className="fas fa-calendar-alt fa-stack-1x fa-inverse"></i>
         </span>
@@ -142,8 +142,8 @@ const HomePage = () => {
                 <div className="timeline-body"><p className="text-muted">With thousands of users, we now support global events and multi-language content.</p></div>
               </div>
             </li>
-            <li className="timeline-inverted">
-              <div className="timeline-image">
+            <li className="timeline-inverted" >
+              <div className="timeline-image" style={{backgroundColor: '#ff70e7', borderColor: '#ff70e7'}}>
                 <h4>
                   Be Part
                   <br />
@@ -223,7 +223,7 @@ const HomePage = () => {
               </div>
             </div>
             <div className="text-center">
-              <button className="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit">
+              <button className="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit" style={{backgroundColor: '#ff70e7', borderColor: '#ff70e7'}}>
                 Send Message
               </button>
             </div>
