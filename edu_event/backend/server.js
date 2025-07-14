@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const logger = require('./middleware/logger');
 const appliedRoutes = require('./routes/appliedRoute'); 
-const connectionsRoutes = require('./routes/connectionsRoute');
+const connectionsRoutes = require('./routes/connectionRoute');
 
 const authRoutes = require('./routes/authRoute');
 const eventRoutes = require('./routes/eventRoute');
